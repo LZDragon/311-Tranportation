@@ -9,11 +9,11 @@ public class WaterTransportation extends Transportation{
     //////////////////////////
     //      Constructors    //
     //////////////////////////
-    WaterTransportation(String vesselName, String BodyOfWater, String Port, double cost, String purchaseType, int avgSpeed, int capacity){
+    WaterTransportation(String vesselName, String BodyOfWater, String port, double cost, String purchaseType, int avgSpeed, int capacity){
         super(cost,purchaseType,avgSpeed,capacity);
         this.vesselName = vesselName;
         this.bodyOfWater = BodyOfWater;
-        this.Port = Port;
+        this.Port = port;
     }
 
     ///////////////////////////
@@ -30,8 +30,15 @@ public class WaterTransportation extends Transportation{
     public void setVesselName(String vesselName) {this.vesselName = vesselName;}
     public void setPort(String port) {this.Port = port;}
 
+    /////////////////////////////
+    //         Override        //
+    /////////////////////////////
     @Override
     public String toString() {
-        return super.toString();
+        return String.format("%n%-15s%n%-15s%-20s%n%-15s%-20s%n%-15s%-20s%n",
+            super.toString(),
+            "Vessel Name: ", this.vesselName,
+            "Travels by: ", this.bodyOfWater,
+            "Located at Port: ", this.Port);
     }
 }
