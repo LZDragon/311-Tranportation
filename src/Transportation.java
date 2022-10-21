@@ -5,8 +5,9 @@ public class Transportation {
     private double cost;
     private String purchaseType;
     private int avgSpeed;
+    private String speedUnits;
     private int capacity;
-
+    private String location;
     //////////////////////////
     //      Constructors    //
     //////////////////////////
@@ -28,7 +29,9 @@ public class Transportation {
     public double getCost() {return this.cost;}
     public String getPurchaseType(){return this.purchaseType;}
     public int getAvgSpeed() {return this.avgSpeed;}
+    public String getSpeedUnits() {return speedUnits;}
     public int getCapacity() {return this.capacity;}
+    public String getLocation() {return location;}
 
     ////////////////////////////
     //         Setters        //
@@ -37,6 +40,7 @@ public class Transportation {
     public void setPurchaseType(String purchaseType) {this.purchaseType = purchaseType;}
     public void setAvgSpeed(int avgSpeed) {this.avgSpeed = avgSpeed;}
     public void setCapacity(int capacity) {this.capacity = capacity;}
+    public void setLocation(String location) {this.location = location;}
 
     @Override
     public String toString() {
