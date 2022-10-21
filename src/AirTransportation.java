@@ -3,7 +3,7 @@ public class AirTransportation extends Transportation {
     private String flightMethod;
 
     //constructor
-    AirTransportation(double airSpeed, String flightMethod, double cost, String purchaseType, int avgSpeed, int capacity) {
+    AirTransportation(String flightMethod, double cost, String purchaseType, int avgSpeed, int capacity) {
         super(cost, purchaseType, avgSpeed, capacity);
         this.flightMethod = flightMethod;
     }
