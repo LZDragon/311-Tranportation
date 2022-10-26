@@ -6,15 +6,19 @@ public class Plane extends AirTransportation {
     String planeType;
     String airline;
 
-    //constructor
+    //constructors
     Plane(int wings, int engines, int classes, String planeType, String airline, String flightMethod, int maxHeight,
-          double cost, String purchaseType, int avgSpeed, int capacity) {
-        super(flightMethod, maxHeight, cost, purchaseType, avgSpeed, capacity);
+          int maxDistance, double cost, String purchaseType, int avgSpeed, int capacity) {
+        super(flightMethod, maxHeight, maxDistance, cost, purchaseType, avgSpeed, capacity);
         this.wings = wings;
         this.engines = engines;
         this.classes = classes;
         this.planeType = planeType;
         this.airline = airline;
+    }
+
+    Plane(String flightMethod, int maxHeight, int maxDistance, double cost, String purchaseType, int avgSpeed, int capacity) {
+        super(flightMethod, maxHeight, maxDistance, cost, purchaseType, avgSpeed, capacity);
     }
 
     //getters

@@ -4,12 +4,24 @@ public class WTCMillerKellermannTelkamp {
 
     public static void main(String[] args){
 
+        Plane plane = new Plane(2, 4, 3, "Boeing 747", "Southwest",
+                "Mechanical", 42000, 8000, 200, "Ticket", 460,
+                200);
+
+        Helicopter helicopter = new Helicopter("H175", 1, "Mechanical", 10000,
+                500, 300, "Ticket", 200, 6);
+
+        Dirigible dirigible = new Dirigible("Blimp", "Helium", "Gas", 4000, 700,
+                400, "Ticket", 35, 15);
+
+        HotAirBalloon hotAirBalloon = new HotAirBalloon("Montgolfier", "Buoyancy", 3000,
+                6000, 300, "Ticket", 10, 10);
+
 
         Scanner input = new Scanner(System.in);
         //Ask the user what type of transportation they want to use (Land, Air, Water)
         System.out.println("Which type of transportation would you like (Land, Air, Water)");
         String selection ="";
-
 
         //TODO:In a table format, display the options for the type selected, the cost of transportation,
         // whether the purchase is for a ticket or for a rental, the average speed, and the number of passengers allowed.
@@ -17,7 +29,14 @@ public class WTCMillerKellermannTelkamp {
             case "land":
                 System.out.println("Land");
                 break;
-            case "air": break;
+            case "air":
+                System.out.println("Air");
+                System.out.printf("%-20s%-15s%-15s%-15s%-15s%n", "Type", "Cost", "Purchase Type", "Average Speed", "Passengers Allowed");
+                System.out.printf("%-20s%-15.2f%-15s%-15d%-15d%n", "Plane", plane.getCost(), plane.getPurchaseType(), plane.getAvgSpeed(), plane.getCapacity());
+                System.out.printf("%-20s%-15.2f%-15s%-15d%-15d%n", "Helicopter", helicopter.getCost(), helicopter.getPurchaseType(), helicopter.getAvgSpeed(), helicopter.getCapacity());
+                System.out.printf("%-20s%-15.2f%-15s%-15d%-15d%n", "Dirigible", dirigible.getCost(), dirigible.getPurchaseType(), dirigible.getAvgSpeed(), dirigible.getCapacity());
+                System.out.printf("%-20s%-15.2f%-15s%-15d%-15d%n", "Hot Air Balloon", hotAirBalloon.getCost(), hotAirBalloon.getPurchaseType(), hotAirBalloon.getAvgSpeed(), hotAirBalloon.getCapacity());
+                break;
             case "water": break;
             default:
         }

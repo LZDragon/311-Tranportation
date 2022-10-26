@@ -4,11 +4,16 @@ public class Helicopter extends AirTransportation {
     private int rotors;
 
     //constructor
-    Helicopter(String helicopterType, int rotors, String flightMethod, int maxHeight, double cost, String purchaseType,
-               int avgSpeed, int capacity) {
-        super(flightMethod, maxHeight, cost, purchaseType, avgSpeed, capacity);
+    Helicopter(String helicopterType, int rotors, String flightMethod, int maxHeight, int maxDistance, double cost,
+               String purchaseType, int avgSpeed, int capacity) {
+        super(flightMethod, maxHeight, maxDistance, cost, purchaseType, avgSpeed, capacity);
         this.helicopterType = helicopterType;
         this.rotors = rotors;
+    }
+
+    Helicopter(String flightMethod, int maxHeight, int maxDistance, double cost, String purchaseType, int avgSpeed,
+               int capacity) {
+        super(flightMethod, maxHeight, maxDistance, cost, purchaseType, avgSpeed, capacity);
     }
 
     //getters
