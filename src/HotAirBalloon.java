@@ -3,8 +3,8 @@ public class HotAirBalloon extends AirTransportation{
     private String balloonType;
 
     //constructor
-    HotAirBalloon(String balloonType, String flightMethod, double cost, String purchaseType, int avgSpeed, int capacity) {
-        super(flightMethod, cost, purchaseType, avgSpeed, capacity);
+    HotAirBalloon(String balloonType, String flightMethod, int maxHeight, double cost, String purchaseType, int avgSpeed, int capacity) {
+        super(flightMethod, maxHeight, cost, purchaseType, avgSpeed, capacity);
         this.balloonType = balloonType;
     }
 
