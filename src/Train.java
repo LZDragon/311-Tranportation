@@ -86,4 +86,13 @@ public class Train extends LandTransportation{
         this.rapidTransitTrainType = rapidTransitTrainType;
     }
 
+    @Override
+    public String toString() {
+        return String.format("%n%-15s%n%-15s%-20d%n%-15s%-20s%n%-15s%-20s%n",
+                super.toString(),
+                "Departure Time: ", getDepartureTime(),
+                "Distance Service: ", getPassengerTrainDistanceService(),
+                "Rapid Transit Type", getRapidTransitTrainType());
+    }
+
 }
