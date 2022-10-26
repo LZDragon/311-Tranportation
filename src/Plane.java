@@ -7,9 +7,9 @@ public class Plane extends AirTransportation {
     String airline;
 
     //constructor
-    Plane(int wings, int engines, int classes, String planeType, String airline, String flightMethod,
+    Plane(int wings, int engines, int classes, String planeType, String airline, String flightMethod, int maxHeight,
           double cost, String purchaseType, int avgSpeed, int capacity) {
-        super(flightMethod, cost, purchaseType, avgSpeed, capacity);
+        super(flightMethod, maxHeight, cost, purchaseType, avgSpeed, capacity);
         this.wings = wings;
         this.engines = engines;
         this.classes = classes;

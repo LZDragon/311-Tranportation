@@ -3,8 +3,8 @@ public class Dirigible extends AirTransportation{
     private String dirigibleType;
 
     //constructor
-    Dirigible(String dirigibleType, String flightMethod, double cost, String purchaseType, int avgSpeed, int capacity) {
-        super(flightMethod, cost, purchaseType, avgSpeed, capacity);
+    Dirigible(String dirigibleType, String flightMethod, int maxHeight, double cost, String purchaseType, int avgSpeed, int capacity) {
+        super(flightMethod, maxHeight, cost, purchaseType, avgSpeed, capacity);
         this.dirigibleType = dirigibleType;
     }
 
