@@ -39,7 +39,7 @@ public class Bus extends LandTransportation{
      * @return String value representing the type of Bus for a Bus object
      */
     public String getBusType() {
-        return busType;
+        return this.busType;
     }
 
     /**
@@ -55,7 +55,7 @@ public class Bus extends LandTransportation{
      * @return String value representing the usage of Bus for a bus object
      */
     public String getBusUse() {
-        return busUse;
+        return this.busUse;
     }
 
     /**

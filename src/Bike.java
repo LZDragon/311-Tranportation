@@ -1,6 +1,7 @@
 public class Bike extends LandTransportation{
     private String frameMaterial;
     private String bikeType;
+    private String pickupLocation;
 
     /**
      * @param cost           - Cost of the LandTransportation
@@ -28,10 +29,11 @@ public class Bike extends LandTransportation{
      * @param bikeType       - Type of Bike (city bike, mountain bike, racing bike,
      */
     public Bike(double cost, String purchaseType, int avgSpeed, int capacity, String fuelType, String motorType,
-                int numberOfWheels, String frameMaterial, String bikeType) {
+                int numberOfWheels, String frameMaterial, String bikeType, String pickupLocation) {
         super(cost, purchaseType, avgSpeed, capacity, fuelType, motorType, numberOfWheels);
         this.frameMaterial = frameMaterial;
         this.bikeType = bikeType;
+        this.pickupLocation = pickupLocation;
     }
 
     /**
@@ -55,7 +57,7 @@ public class Bike extends LandTransportation{
      * @return String value representing type of bike of a bike object
      */
     public String getBikeType() {
-        return bikeType;
+        return this.bikeType;
     }
 
     /**
@@ -67,14 +69,34 @@ public class Bike extends LandTransportation{
     }
 
     /**
+     * Setter for rental pickup location of a bike object
+     * @return String value representing bike pickup location
+     */
+    public String getPickupLocation() {
+        return this.pickupLocation;
+    }
+
+    /**
+     * Getter for rental pickup location of a bike object
+     * @param pickupLocation String value representing pick up location a bike object
+     */
+    public void setPickupLocation(String pickupLocation) {
+        this.pickupLocation = pickupLocation;
+    }
+
+    /**
      * Overridden toSting method which displays a Bike object in a Table Format
      * @return String formatted representation of the Bike object
      */
     @Override
     public String toString() {
-        return String.format("%n%-15s%n%-15s%-20s%n%-15s%-20s%n",
+        return String.format("%n%-15s%n%-15s%-20s%n%-15s%-20s%n%-15s%-20s%n",
                 super.toString(),
-                "Frame Material: ", getFrameMaterial(),
-                "Bike Type: ", getBikeType());
+                "Frame Material: ",getFrameMaterial(),
+                "Bike Type: ", getBikeType(),
+                "Pick Up Location", getPickupLocation());
+
     }
+
+
 }

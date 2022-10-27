@@ -45,7 +45,7 @@ public class Train extends LandTransportation{
      * @return Integer value representing the time of departure for Train objects
      */
     public int getDepartureTime() {
-        return departureTime;
+        return this.departureTime;
     }
 
     /**
@@ -61,7 +61,7 @@ public class Train extends LandTransportation{
      * @return String value representing the distance service
      */
     public String getPassengerTrainDistanceService() {
-        return passengerTrainDistanceService;
+        return this.passengerTrainDistanceService;
     }
 
     /**

@@ -43,7 +43,7 @@ public class Automobile extends LandTransportation{
      * @return String value representing the transmission type for Automobile objects
      */
     public String getTransmissionType() {
-        return transmissionType;
+        return this.transmissionType;
     }
 
     /**
@@ -58,7 +58,7 @@ public class Automobile extends LandTransportation{
      * @return Int value representing the number of doors for a calling Automobile object
      */
     public int getNumberOfDoors() {
-        return numberOfDoors;
+        return this.numberOfDoors;
     }
 
     /**
@@ -73,7 +73,7 @@ public class Automobile extends LandTransportation{
      * @return String value representing the body style for a calling Automobile object
      */
     public String getBodyStyle() {
-        return bodyStyle;
+        return this.bodyStyle;
     }
 
     /**

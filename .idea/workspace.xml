@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0bfdc778-3636-49eb-9e5d-02c2c9daab56" name="Changes" comment="Implemented all Components for the Bus subclass. Added Javadoc comments for toString in Train and Automobile">
+    <list default="true" id="0bfdc778-3636-49eb-9e5d-02c2c9daab56" name="Changes" comment="Added pickUp location instance variable to bike Class. Updated getters and setter and toString">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Automobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automobile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bike.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Train.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="land_Transportation" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -109,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666835746698</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Implemented all final components for the Bike subclass. Wrapped part of Bus constructor header onto new line">
+      <created>1666836673378</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666836673379</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,7 +132,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="land_Transportation" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -142,7 +151,9 @@
     <MESSAGE value="Implemented all Components for the Train subclass" />
     <MESSAGE value="Implemented all Components for the Automobile subclass. Wrapped constructor onto new line" />
     <MESSAGE value="Implemented all Components for the Bus subclass. Added Javadoc comments for toString in Train and Automobile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented all Components for the Bus subclass. Added Javadoc comments for toString in Train and Automobile" />
+    <MESSAGE value="Implemented all final components for the Bike subclass. Wrapped part of Bus constructor header onto new line" />
+    <MESSAGE value="Added pickUp location instance variable to bike Class. Updated getters and setter and toString" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added pickUp location instance variable to bike Class. Updated getters and setter and toString" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
