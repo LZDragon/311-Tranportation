@@ -39,7 +39,13 @@ public class WTCMillerKellermannTelkamp {
                 System.out.printf("%-20s%-15.2f%-15s%-15d%-15d%n", "Dirigible", dirigible.getCost(), dirigible.getPurchaseType(), dirigible.getAvgSpeed(), dirigible.getCapacity());
                 System.out.printf("%-20s%-15.2f%-15s%-15d%-15d%n", "Hot Air Balloon", hotAirBalloon.getCost(), hotAirBalloon.getPurchaseType(), hotAirBalloon.getAvgSpeed(), hotAirBalloon.getCapacity());
                 break;
-            case "water": break;
+            case "water":
+                System.out.println("Water");
+                System.out.printf("%-20s%-15s%-15s%-15s%-15s%n", "Type", "Cost", "Purchase Type", "Average Speed", "Passengers Allowed");
+                System.out.printf("%-20s%-15.2f%-15s%-15d%-15d%n","Boat", boat.getCost(), boat.getPurchaseType(), boat.getAvgSpeed(), boat.getCapacity());
+                System.out.printf("%-20s%-15.2f%-15s%-15d%-15d%n","Ship", ship.getCost(), ship.getPurchaseType(), ship.getAvgSpeed(), ship.getCapacity());
+                System.out.printf("%-20s%-15.2f%-15s%-15d%-15d%n","Submarine", submarine.getCost(), submarine.getPurchaseType(), submarine.getAvgSpeed(), submarine.getCapacity());
+                break;
             default:
         }
 
