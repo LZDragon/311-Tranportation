@@ -23,7 +23,7 @@ public class Train extends LandTransportation{
     }
 
     /**
-     * Parameterized and specialized constructor for Train objecdts
+     * Parameterized and specialized constructor for Train objects
      * @param cost           - Cost of the LandTransportation
      * @param purchaseType   - Method of Purchase for the LandTransportation
      * @param avgSpeed       - Average speed of the LandTransportation

@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0bfdc778-3636-49eb-9e5d-02c2c9daab56" name="Changes" comment="Added departure time, print instructions and cost">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0bfdc778-3636-49eb-9e5d-02c2c9daab56" name="Changes" comment="Created all LandTransportation instances and displayed all components in table format">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_26_2022_11_03_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_26_2022_11_03_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_26_2022_11_22_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_26_2022_11_22_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bike.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Train.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WTCMillerKellermannTelkamp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WTCMillerKellermannTelkamp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +183,8 @@
     <MESSAGE value="Added pickUp location instance variable to bike Class. Updated getters and setter and toString" />
     <MESSAGE value="Display air data and total cost" />
     <MESSAGE value="Added departure time, print instructions and cost" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added departure time, print instructions and cost" />
+    <MESSAGE value="Created all LandTransportation instances and displayed all components in table format" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created all LandTransportation instances and displayed all components in table format" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

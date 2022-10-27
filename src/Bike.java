@@ -30,6 +30,7 @@ public class Bike extends LandTransportation{
      * @param numberOfWheels - Number of Wheels
      * @param frameMaterial  - Material of the bike frame
      * @param bikeType       - Type of Bike (city bike, mountain bike, racing bike,
+     * @param pickupLocation - Where the bike rental is to be picked up
      */
     public Bike(double cost, String purchaseType, int avgSpeed, int capacity, String fuelType, String motorType,
                 int numberOfWheels, String frameMaterial, String bikeType, String pickupLocation) {
