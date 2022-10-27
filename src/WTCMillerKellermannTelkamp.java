@@ -58,6 +58,7 @@ public class WTCMillerKellermannTelkamp {
                 System.out.print(plane);
                 System.out.println("Is this the correct mode of transportation? ");
                 if(input.nextLine().equalsIgnoreCase("yes")) {
+                    //Ask the user how many passengers need to travel using that mode of transportation
                     System.out.println("How many passengers do you have?");
                     totalCost = input.nextInt() * plane.getCost();
                     System.out.println("Your flight leaves at " + plane.getDeparture());
@@ -66,7 +67,9 @@ public class WTCMillerKellermannTelkamp {
             case "helicopter":
                 System.out.print(helicopter);
                 System.out.println("Is this the correct mode of transportation? ");
+                //Ask the user to verify that this is the mode of transportation they want to use
                 if(input.nextLine().equalsIgnoreCase("yes")) {
+                    //Ask the user how many passengers need to travel using that mode of transportation
                     System.out.println("How many passengers do you have?");
                     totalCost = input.nextInt() * helicopter.getCost();
                     System.out.println("Your flight leaves at " + helicopter.getDeparture());
@@ -75,7 +78,9 @@ public class WTCMillerKellermannTelkamp {
             case "dirigible":
                 System.out.print(dirigible);
                 System.out.println("Is this the correct mode of transportation? ");
+                //Ask the user to verify that this is the mode of transportation they want to use
                 if(input.nextLine().equalsIgnoreCase("yes")) {
+                    //Ask the user how many passengers need to travel using that mode of transportation
                     System.out.println("How many passengers do you have?");
                     totalCost = input.nextInt() * dirigible.getCost();
                     System.out.println("Your flight leaves at " + dirigible.getDeparture());
@@ -84,7 +89,9 @@ public class WTCMillerKellermannTelkamp {
             case "hot air balloon":
                 System.out.print(hotAirBalloon);
                 System.out.println("Is this the correct mode of transportation? ");
+                //Ask the user to verify that this is the mode of transportation they want to use
                 if(input.nextLine().equalsIgnoreCase("yes")) {
+                    //Ask the user how many passengers need to travel using that mode of transportation
                     System.out.println("How many passengers do you have?");
                     totalCost = input.nextInt() * hotAirBalloon.getCost();
                     System.out.println("Your flight leaves at " + hotAirBalloon.getDeparture());
@@ -93,7 +100,9 @@ public class WTCMillerKellermannTelkamp {
             case "boat":
                 System.out.print(boat);
                 System.out.println("Is this the correct mode of transportation? ");
+                //Ask the user to verify that this is the mode of transportation they want to use
                 if(input.nextLine().equalsIgnoreCase("yes")) {
+                    //Ask the user how many passengers need to travel using that mode of transportation
                     System.out.println("How many passengers do you have?");
                     totalCost = input.nextInt() * boat.getCost();
                 }
@@ -101,7 +110,9 @@ public class WTCMillerKellermannTelkamp {
             case "ship":
                 System.out.print(ship);
                 System.out.println("Is this the correct mode of transportation? ");
+                //Ask the user to verify that this is the mode of transportation they want to use
                 if(input.nextLine().equalsIgnoreCase("yes")) {
+                    //Ask the user how many passengers need to travel using that mode of transportation
                     System.out.println("How many passengers do you have?");
                     totalCost = input.nextInt() * ship.getCost();
                 }
@@ -109,16 +120,16 @@ public class WTCMillerKellermannTelkamp {
             case "submarine":
                 System.out.print(submarine);
                 System.out.println("Is this the correct mode of transportation? ");
+                //Ask the user to verify that this is the mode of transportation they want to use
                 if(input.nextLine().equalsIgnoreCase("yes")) {
+                    //Ask the user how many passengers need to travel using that mode of transportation
                     System.out.println("How many passengers do you have?");
                     totalCost = input.nextInt() * submarine.getCost();
                 }
                 break;
         }
+        //Display the total cost
         System.out.print("Total cost = $" + totalCost);
-        //TODO: Ask the user to verify that this is the mode of transportation they want to use
-        //TODO:Ask the user how many passengers need to travel using that mode of transportation
-        //TODO:Display the total cost
         //TODO:Display travel instructions (what time their flight leaves, where they need to go to pick up a bike rental, etc.)
     }
 }
