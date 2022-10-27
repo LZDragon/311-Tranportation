@@ -3,7 +3,9 @@ import java.util.Scanner;
 public class WTCMillerKellermannTelkamp {
 
     public static void main(String[] args){
-
+        Boat boat = new Boat("Tug",false,"Tooty Toot", "River","11",55.0,"Ticket",15,20);
+        Ship ship = new Ship(2,2,"SS Strong","Ocean","53",80.50,"Ticket",40,200);
+        Submarine submarine = new Submarine(1000,"The Whale","Deep Ocean", "BoonDocks",5000.0,"Rent",40,300);
         Plane plane = new Plane(2, 4, 3, "Boeing 747", "Southwest",
                 "Mechanical", 42000, 8000, 200, "Ticket", 460,
                 200);
