@@ -46,6 +46,42 @@ public class WTCMillerKellermannTelkamp {
         //TODO:Ask the user to select which mode of transportation they want to use.
         System.out.println("Which mode of transportation would you like?");
         //TODO:Display ALL information about the selected mode using an overridden toString method.
+        double totalCost = 0;
+        switch(input.nextLine().toLowerCase()) {
+            case "plane":
+                System.out.print(plane);
+                System.out.println("Is this the correct mode of transportation? ");
+                if(input.nextLine().equalsIgnoreCase("yes")) {
+                    System.out.println("How many passengers do you have?");
+                    totalCost = input.nextInt() * plane.getCost();
+                }
+                break;
+            case "helicopter":
+                System.out.print(helicopter);
+                System.out.println("Is this the correct mode of transportation? ");
+                if(input.nextLine().equalsIgnoreCase("yes")) {
+                    System.out.println("How many passengers do you have?");
+                    totalCost = input.nextInt() * helicopter.getCost();
+                }
+                break;
+            case "dirigible":
+                System.out.print(dirigible);
+                System.out.println("Is this the correct mode of transportation? ");
+                if(input.nextLine().equalsIgnoreCase("yes")) {
+                    System.out.println("How many passengers do you have?");
+                    totalCost = input.nextInt() * dirigible.getCost();
+                }
+                break;
+            case "hot air balloon":
+                System.out.print(hotAirBalloon);
+                System.out.println("Is this the correct mode of transportation? ");
+                if(input.nextLine().equalsIgnoreCase("yes")) {
+                    System.out.println("How many passengers do you have?");
+                    totalCost = input.nextInt() * hotAirBalloon.getCost();
+                }
+                break;
+        }
+        System.out.print("Total cost = $" + totalCost);
         //TODO: Ask the user to verify that this is the mode of transportation they want to use
         //TODO:Ask the user how many passengers need to travel using that mode of transportation
         //TODO:Display the total cost
