@@ -88,6 +88,10 @@ public class Train extends LandTransportation{
         this.rapidTransitTrainType = rapidTransitTrainType;
     }
 
+    /**
+     * Overridden toSting method which displays a Train object in a Table Format
+     * @return String formatted representation of the Train object
+     */
     @Override
     public String toString() {
         return String.format("%n%-15s%n%-15s%-20d%n%-15s%-20s%n%-15s%-20s%n",

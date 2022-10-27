@@ -84,6 +84,9 @@ public class Automobile extends LandTransportation{
         this.bodyStyle = bodyStyle;
     }
 
+    /**
+     * @return
+     */
     @Override
     public String toString() {
         return String.format("%n%-15s%n%-15s%-20s%n%-15s%-20d%n%-15s%-20s%n",
