@@ -49,8 +49,8 @@ public class WTCMillerKellermannTelkamp {
             default:
         }
 
-        //TODO:Ask the user to select which mode of transportation they want to use.
-        System.out.println("Which mode of transportation would you like?");
+        //Ask the user to select which mode of transportation they want to use.
+        System.out.println("Which mode of transportation would you like? (Enter the Type)");
         //TODO:Display ALL information about the selected mode using an overridden toString method.
         double totalCost = 0;
         switch(input.nextLine().toLowerCase()) {
@@ -84,6 +84,30 @@ public class WTCMillerKellermannTelkamp {
                 if(input.nextLine().equalsIgnoreCase("yes")) {
                     System.out.println("How many passengers do you have?");
                     totalCost = input.nextInt() * hotAirBalloon.getCost();
+                }
+                break;
+            case "boat":
+                System.out.print(boat);
+                System.out.println("Is this the correct mode of transportation? ");
+                if(input.nextLine().equalsIgnoreCase("yes")) {
+                    System.out.println("How many passengers do you have?");
+                    totalCost = input.nextInt() * boat.getCost();
+                }
+                break;
+            case "ship":
+                System.out.print(ship);
+                System.out.println("Is this the correct mode of transportation? ");
+                if(input.nextLine().equalsIgnoreCase("yes")) {
+                    System.out.println("How many passengers do you have?");
+                    totalCost = input.nextInt() * ship.getCost();
+                }
+                break;
+            case "submarine":
+                System.out.print(submarine);
+                System.out.println("Is this the correct mode of transportation? ");
+                if(input.nextLine().equalsIgnoreCase("yes")) {
+                    System.out.println("How many passengers do you have?");
+                    totalCost = input.nextInt() * submarine.getCost();
                 }
                 break;
         }
