@@ -10,7 +10,8 @@ public class Bus extends LandTransportation{
      * @param motorType      - Type of Motor
      * @param numberOfWheels - Number of Wheels
      */
-    public Bus(double cost, String purchaseType, int avgSpeed, int capacity, String fuelType, String motorType, int numberOfWheels) {
+    public Bus(double cost, String purchaseType, int avgSpeed, int capacity, String fuelType, String motorType,
+               int numberOfWheels) {
         super(cost, purchaseType, avgSpeed, capacity, fuelType, motorType, numberOfWheels);
     }
 
@@ -25,7 +26,8 @@ public class Bus extends LandTransportation{
      * @param busType        - Type of Bus (Single-Decker, Double-Decker, Coach, or Bendy-Bus)
      * @param busUse         - Usage of Bus(Public, Tourism, Student, or Private Charter)
      */
-    public Bus(double cost, String purchaseType, int avgSpeed, int capacity, String fuelType, String motorType, int numberOfWheels, String busType, String busUse) {
+    public Bus(double cost, String purchaseType, int avgSpeed, int capacity, String fuelType, String motorType,
+               int numberOfWheels, String busType, String busUse) {
         super(cost, purchaseType, avgSpeed, capacity, fuelType, motorType, numberOfWheels);
         this.busType = busType;
         this.busUse = busUse;
