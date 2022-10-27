@@ -17,6 +17,9 @@ public class Train extends LandTransportation{
     public Train(double cost, String purchaseType, int avgSpeed, int capacity, String fuelType,
                  String motorType, int numberOfWheels) {
         super(cost, purchaseType, avgSpeed, capacity, fuelType, motorType, numberOfWheels);
+        this.departureTime = 0;
+        this.passengerTrainDistanceService = "";
+        this.rapidTransitTrainType = "";
     }
 
     /**

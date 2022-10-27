@@ -118,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666836673379</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added pickUp location instance variable to bike Class. Updated getters and setter and toString">
+      <created>1666838932059</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666838932059</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

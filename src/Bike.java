@@ -15,6 +15,9 @@ public class Bike extends LandTransportation{
     public Bike(double cost, String purchaseType, int avgSpeed, int capacity, String fuelType,
                 String motorType, int numberOfWheels) {
         super(cost, purchaseType, avgSpeed, capacity, fuelType, motorType, numberOfWheels);
+        this.frameMaterial = "";
+        this.bikeType = "";
+        this.pickupLocation = "";
     }
 
     /**

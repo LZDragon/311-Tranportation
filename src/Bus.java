@@ -13,6 +13,9 @@ public class Bus extends LandTransportation{
     public Bus(double cost, String purchaseType, int avgSpeed, int capacity, String fuelType, String motorType,
                int numberOfWheels) {
         super(cost, purchaseType, avgSpeed, capacity, fuelType, motorType, numberOfWheels);
+        this.busType = "";
+        this.busUse = "";
+
     }
 
     /**

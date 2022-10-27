@@ -15,6 +15,9 @@ public class Automobile extends LandTransportation{
     public Automobile(double cost, String purchaseType, int avgSpeed, int capacity, String fuelType, String motorType,
                       int numberOfWheels) {
         super(cost, purchaseType, avgSpeed, capacity, fuelType, motorType, numberOfWheels);
+        this.transmissionType = "";
+        this.numberOfDoors = 0;
+        this.bodyStyle = "";
     }
 
 
