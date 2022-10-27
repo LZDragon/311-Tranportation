@@ -2,7 +2,8 @@ public class Ship extends WaterTransportation{
     //////////////////////////
     //      Variables       //
     //////////////////////////
-
+    private int numAnchors;
+    private int numWinches;
     //////////////////////////
     //      Constructors    //
     //////////////////////////
@@ -13,10 +14,15 @@ public class Ship extends WaterTransportation{
     ///////////////////////////
     //        Getters        //
     ///////////////////////////
+    public int getNumAnchors() {return numAnchors;}
+    public int getNumWinches() {return numWinches;}
+
 
     ////////////////////////////
     //         Setters        //
     ////////////////////////////
+    public void setNumAnchors(int numAnchors) {this.numAnchors = numAnchors;}
+    public void setNumWinches(int numWinches) {this.numWinches = numWinches;}
 
     /////////////////////////////
     //         Override        //
@@ -24,6 +30,9 @@ public class Ship extends WaterTransportation{
 
     @Override
     public String toString() {
-        return super.toString();
+        return String.format("-15s%-15s%-20d%n%-15s%-20d%n",
+                super.toString(),
+                "Number of Anchors: ", this.numAnchors,
+                "Number of Winches", this.numWinches);
     }
 }
