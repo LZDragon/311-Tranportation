@@ -31,6 +31,6 @@ public class Submarine extends WaterTransportation {
     @Override
     public String toString() {
 
-        return super.toString();
+        return String.format("-15s%-15s-20d", super.toString(), "Max Depth: ", this.maxDepth);
     }
 }

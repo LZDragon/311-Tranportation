@@ -11,4 +11,20 @@ public class Boat extends WaterTransportation{
         this.boatType = "";
         this.fishing = false;
     }
+
+    //////////////////////////////
+    //          Getters         //
+    //////////////////////////////
+    public String getBoatType() {return boatType;}
+    public boolean isFishing() {return fishing;}
+    //////////////////////////////
+    //          Setters         //
+    //////////////////////////////
+    public void setBoatType(String boatType) {this.boatType = boatType;}
+    public void setFishing(boolean fishing) {this.fishing = fishing;}
+
+    @Override
+    public String toString() {
+        return String.format("-15s%-15s%-20s%n%-15s%-20b",super.toString(),"Boat Type: ", this.boatType, "Fishing: ", this.isFishing());
+    }
 }
