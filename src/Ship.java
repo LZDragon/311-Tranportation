@@ -9,6 +9,13 @@ public class Ship extends WaterTransportation{
     //////////////////////////
     Ship(String vesselName, String bodyOfWater, String port, double cost, String purchaseType, int avgSpeed, int capacity){
         super(vesselName, bodyOfWater, port, cost,purchaseType,avgSpeed,capacity);
+        this.numWinches=0;
+        this.numAnchors=0;
+    }
+    Ship(int numAnchors, int numWinches,String vesselName, String bodyOfWater, String port, double cost, String purchaseType, int avgSpeed, int capacity){
+        super(vesselName, bodyOfWater, port, cost,purchaseType,avgSpeed,capacity);
+        this.numAnchors=numAnchors;
+        this.numWinches=numWinches;
     }
 
     ///////////////////////////
