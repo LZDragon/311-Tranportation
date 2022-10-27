@@ -8,8 +8,8 @@ public class Plane extends AirTransportation {
 
     //constructors
     Plane(int wings, int engines, int classes, String planeType, String airline, String flightMethod, int maxHeight,
-          int maxDistance, double cost, String purchaseType, int avgSpeed, int capacity) {
-        super(flightMethod, maxHeight, maxDistance, cost, purchaseType, avgSpeed, capacity);
+          int maxDistance, String departure, double cost, String purchaseType, int avgSpeed, int capacity) {
+        super(flightMethod, maxHeight, maxDistance, departure, cost, purchaseType, avgSpeed, capacity);
         this.wings = wings;
         this.engines = engines;
         this.classes = classes;
@@ -17,8 +17,8 @@ public class Plane extends AirTransportation {
         this.airline = airline;
     }
 
-    Plane(String flightMethod, int maxHeight, int maxDistance, double cost, String purchaseType, int avgSpeed, int capacity) {
-        super(flightMethod, maxHeight, maxDistance, cost, purchaseType, avgSpeed, capacity);
+    Plane(String flightMethod, int maxHeight, int maxDistance, String departure, double cost, String purchaseType, int avgSpeed, int capacity) {
+        super(flightMethod, maxHeight, maxDistance, departure, cost, purchaseType, avgSpeed, capacity);
     }
 
     //getters
