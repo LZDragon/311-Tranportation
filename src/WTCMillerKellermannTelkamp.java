@@ -7,17 +7,17 @@ public class WTCMillerKellermannTelkamp {
         Ship ship = new Ship(2,2,"SS Strong","Ocean","53",80.50,"Ticket",40,200);
         Submarine submarine = new Submarine(1000,"The Whale","Deep Ocean", "BoonDocks",5000.0,"Rent",40,300);
         Plane plane = new Plane(2, 4, 3, "Boeing 747", "Southwest",
-                "Mechanical", 42000, 8000, 200, "Ticket", 460,
+                "Mechanical", 42000, 8000, "7:30 p.m.", 200, "Ticket", 460,
                 200);
 
-        Helicopter helicopter = new Helicopter("H175", 1, "Mechanical", 10000,
+        Helicopter helicopter = new Helicopter("H175", 1, "Mechanical", 10000, "6:00 pm",
                 500, 300, "Ticket", 200, 6);
 
-        Dirigible dirigible = new Dirigible("Blimp", "Helium", "Gas", 4000, 700,
+        Dirigible dirigible = new Dirigible("Blimp", "Helium", "Gas", 4000, 700, "2:00 p.m.",
                 400, "Ticket", 35, 15);
 
         HotAirBalloon hotAirBalloon = new HotAirBalloon("Montgolfier", "Buoyancy", 3000,
-                6000, 300, "Ticket", 10, 10);
+                6000, "3:30 p.m.", 300, "Ticket", 10, 10);
 
 
         Scanner input = new Scanner(System.in);
@@ -60,6 +60,7 @@ public class WTCMillerKellermannTelkamp {
                 if(input.nextLine().equalsIgnoreCase("yes")) {
                     System.out.println("How many passengers do you have?");
                     totalCost = input.nextInt() * plane.getCost();
+                    System.out.println("Your flight leaves at " + plane.getDeparture());
                 }
                 break;
             case "helicopter":
@@ -68,6 +69,7 @@ public class WTCMillerKellermannTelkamp {
                 if(input.nextLine().equalsIgnoreCase("yes")) {
                     System.out.println("How many passengers do you have?");
                     totalCost = input.nextInt() * helicopter.getCost();
+                    System.out.println("Your flight leaves at " + helicopter.getDeparture());
                 }
                 break;
             case "dirigible":
@@ -76,6 +78,7 @@ public class WTCMillerKellermannTelkamp {
                 if(input.nextLine().equalsIgnoreCase("yes")) {
                     System.out.println("How many passengers do you have?");
                     totalCost = input.nextInt() * dirigible.getCost();
+                    System.out.println("Your flight leaves at " + dirigible.getDeparture());
                 }
                 break;
             case "hot air balloon":
@@ -84,6 +87,7 @@ public class WTCMillerKellermannTelkamp {
                 if(input.nextLine().equalsIgnoreCase("yes")) {
                     System.out.println("How many passengers do you have?");
                     totalCost = input.nextInt() * hotAirBalloon.getCost();
+                    System.out.println("Your flight leaves at " + hotAirBalloon.getDeparture());
                 }
                 break;
             case "boat":
