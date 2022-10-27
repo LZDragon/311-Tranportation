@@ -14,7 +14,8 @@ public class Train extends LandTransportation{
      * @param motorType      - Type of Motor
      * @param numberOfWheels - Number of Wheels
      */
-    public Train(double cost, String purchaseType, int avgSpeed, int capacity, String fuelType, String motorType, int numberOfWheels) {
+    public Train(double cost, String purchaseType, int avgSpeed, int capacity, String fuelType,
+                 String motorType, int numberOfWheels) {
         super(cost, purchaseType, avgSpeed, capacity, fuelType, motorType, numberOfWheels);
     }
 
@@ -31,7 +32,8 @@ public class Train extends LandTransportation{
      * @param passengerTrainDistanceService - Distance service offered by passenger train (short or long distance)
      * @param rapidTransitTrainType - Type of rapid transit (trams, monorail, light rail, metro)
      */
-    public Train(double cost, String purchaseType, int avgSpeed, int capacity, String fuelType, String motorType, int numberOfWheels, int departureTime, String passengerTrainDistanceService, String rapidTransitTrainType) {
+    public Train(double cost, String purchaseType, int avgSpeed, int capacity, String fuelType, String motorType,
+                 int numberOfWheels, int departureTime, String passengerTrainDistanceService, String rapidTransitTrainType) {
         super(cost, purchaseType, avgSpeed, capacity, fuelType, motorType, numberOfWheels);
         this.departureTime = departureTime;
         this.passengerTrainDistanceService = passengerTrainDistanceService;
